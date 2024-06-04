@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sign Up</title>
+
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="style/all.min.css" />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="style/signup.css" />
+  </head>
+  <body>
+    <section class="signup overflow-auto">
+      <div class="container-fluid">
+        <div class="box w-50 m-auto mt-5 text-center px-3 py-4">
+          <h1 class="mb-4 fw-semibold">Smart Login System</h1>
+
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control shadow-none"
+              id="userName"
+              placeholder="Enter Your Name"
+            />
+            <p class="errMsg mb-3 d-none" id="errNameMsg"></p>
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control shadow-none"
+              id="userEmail"
+              placeholder="Enter Your Email"
+            />
+            <p class="errMsg mb-3 d-none" id="errEmailMsg"></p>
+          </div>
+
+          <div class="mb-5">
+            <input
+              type="password"
+              class="form-control shadow-none"
+              id="userPassword"
+              placeholder="Enter Password"
+            />
+            <p class="errMsg mb-3 d-none" id="errPassMsg"></p>
+          </div>
+
+          <p class="success mb-3 d-none text-success" id="message"></p>
+
+          <button class="btn btn-outline-black w-100 mb-3" id="signupBtn">
+            Sign Up
+          </button>
+          <p class="mb-3">
+            You have an account? <a href="index.html">Signin</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- main js -->
+    <script src="js/signup.js"></script>
+  </body>
+</html>

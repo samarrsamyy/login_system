@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Login</title>
+
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="style/all.min.css" />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body>
+    <section class="login overflow-auto">
+      <div class="container-fluid">
+        <div class="box w-50 m-auto mt-5 text-center px-3 py-4">
+          <h1 class="mb-4 fw-semibold">Smart Login System</h1>
+
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control shadow-none"
+              id="loginEmail"
+              placeholder="Enter Your Email"
+            />
+            <!-- <p class="errMsg mb-3 d-none text-danger" id="LoginMailErr">Enter valid email</p> -->
+          </div>
+
+          <div class="mb-5">
+            <input
+              type="password"
+              class="form-control shadow-none"
+              id="loginPass"
+              placeholder="Enter Password"
+            />
+            <!-- <p class="errMsg mb-3 d-none text-danger" id="LoginPassErr">Enter valid password</p> -->
+          </div>
+
+          <p class="errMsg mb-3 d-none text-danger" id="message">
+          
+          </p>
+
+          <button class="btn btn-outline-black w-100 mb-3" id="loginBtn">
+            Login
+          </button>
+          <p class="mb-3">
+            Don't have an account? <a href="signup.html">Sign Up</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- main js -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
